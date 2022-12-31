@@ -7,7 +7,7 @@
     "prebuild": "npm run clean",
     "build": "tsc",
     "postbuild": "shx cp -r ./src/views ./build",
-    "start": "npm run build && node --experimental-modules ./build/index.js",
+    "start": "npm run build && node --experimental-json-modules ./build/index.js",
     "dev": "ts-node ./src/index.ts",
     "test": "jest"
   },

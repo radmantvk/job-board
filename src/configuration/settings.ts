@@ -1,5 +1,5 @@
 import path from 'path';
-import AppSettingsJson from '../appsettings.json'
+import AppSettingsJson from '../appsettings.json';
 
 /**
  * The type of the app settings
