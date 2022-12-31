@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+}
+
+main {
+  margin: 1em auto;
+  width: 80%;
+}
+
+.boxed {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 25px;
+}
