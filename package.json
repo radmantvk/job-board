@@ -2,9 +2,14 @@
   "name": "job-board",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clear": "shx rm -rf build",
+    "prebuild": "npm run clear",
+    "build": "tsc",
+    "postbuild": "shx cp -r ./src/views ./build",
+    "start": "npm run build && node --experimental-modules ./build/index.js",
+    "dev": "ts-node ./src/index.ts",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -13,9 +18,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/radmantvk/job-board/issues"
-  },
   "homepage": "https://github.com/radmantvk/job-board#readme",
   "devDependencies": {
     "@types/ejs": "^3.1.1",
