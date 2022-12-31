@@ -7,12 +7,11 @@ import {
   useStaticFiles
 } from "./configuration/middleware";
 import { EjsViewEngine, getAppSettings, getPathFactory } from './configuration/settings';
-import routesProvider from './routes';
+import { routes } from './routes';
 
 const path = getPathFactory(process.cwd());
 const appSettings = getAppSettings();
 const app = express();
-const routes = routesProvider(path);
 
 useRequestMiddleware(app);
 
