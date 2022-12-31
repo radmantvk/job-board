@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "clear": "shx rm -rf build",
-    "prebuild": "npm run clear",
+    "clean": "shx rm -rf build",
+    "prebuild": "npm run clean",
     "build": "tsc",
     "postbuild": "shx cp -r ./src/views ./build",
     "start": "npm run build && node --experimental-modules ./build/index.js",
