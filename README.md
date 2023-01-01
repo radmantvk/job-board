@@ -30,15 +30,9 @@ Steps to run:
     ```
 
   - Production:
-    - Build:
-      ```
-      npm run build
-      ```
-    
-    - Run:
-      ```
-      npm run start
-      ```
+    ```
+    npm run start
+    ```
 
 # Testing
 Testing is done with [Jest](https://jestjs.io/).
