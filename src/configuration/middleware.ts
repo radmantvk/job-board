@@ -6,7 +6,7 @@ import { Routes } from '../routes';
  * Register request middleware
  * @param app The app to register the middleware on
  */
-export const useRequestMiddleware = (router: Express): Express => router
+export const useRequestMiddleware = (app: Express): Express => app
   .use(express.json())
   .use(express.urlencoded({ extended: true }));
 

@@ -4,12 +4,12 @@ import AppSettingsJson from '../appsettings.json';
 /**
  * The type of the app settings
  */
-export type AppSettings = {
+export type AppSettings = Readonly<{
   port: number,
   staticResourcesPath: string,
   viewEngine: string,
   viewsRootPath: string
-};
+}>;
 
 /**
  * Get the app settings
