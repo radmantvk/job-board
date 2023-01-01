@@ -17,7 +17,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/radmantvk/job-board#readme",
   "devDependencies": {
     "@types/ejs": "^3.1.1",
