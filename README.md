@@ -17,6 +17,10 @@ job-board
 
 # Run
 Steps to run:
+- clone the repository:
+  ```
+  git clone https://github.com/radmantvk/job-board.git
+  ```
 - Navigate to the root of the project in your terminal
 - Install dependencies:
   ```
