@@ -17,5 +17,6 @@ export type Routes = Readonly<Record<string, Controller>>;
  */
 export const routes: Routes = {
   '/': HomeController,
-  '/about': AboutController
+  '/about': AboutController,
+  '/newPost': AboutController
 };

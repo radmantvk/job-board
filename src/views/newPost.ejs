@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/public/css/newPost.css" type="text/css">
+</head>
+<body>
+    <div class="container text-center my-4">
+      <main>
+        <h1>New Job Posting</h1>
+        <p><a href="/">Home</a></p>
+        <form action="" method="POST">
+            <div class="contact-form-controls">
+                <div class="row mb-3 mx-2">
+                    <div class="form-group col">
+                        <label for="username">Job Name:</label>
+                        <input type="text" class="form-control" id="username" placeholder="name" required>
+                    </div>
+                    <div class="form-group col">
+                        <label for="location">Location:</label>
+                        <input type="text" class="form-control" id="location" placeholder="location" required>
+                    </div>
+                </div>
+                <div class="row mb-3 mx-2">
+                    <div class="form-group col">
+                        <label for="work-type">Job type:</label>
+                        <br>
+                        <select class="form-group col" id = work-type>
+                            <option value="full-time">full-time</option>
+                            <option value="part-time">part-time</option>
+                            <option value="internship">internship</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3 mx-2">
+                    <div class="form-group col">
+                        <label for="message">Job Description:</label>
+                        <textarea
+                            class="form-control"
+                            style="resize: none;"
+                            name="message"
+                            id="message"
+                            rows="15"
+                            required
+                        ></textarea>
+                        <!-- <input type="textarea" class="form-control" id="message" placeholder="message"> -->
+                    </div>
+                </div>
+                <div class="row text-center mb-3 mx-2">
+                    <div class="col"><button type="submit" class="btn btn-primary text-center w-25">Submit</button></div>
+                </div>
+            </div>
+        </form>
+      </main>
+    </div>
+</body>
+</html>
