@@ -1,6 +1,6 @@
 import express from 'express';
 import {
-  useViewEngine,
+  setViewEngine,
   useRequestMiddleware,
   useRoutes,
   useViewControllers,
@@ -19,7 +19,7 @@ useStaticFiles(app, path(appSettings.staticResourcesPath));
 
 useRoutes(app);
 
-useViewEngine(app, EjsViewEngine, path(appSettings.viewsRootPath));
+setViewEngine(app, EjsViewEngine, path(appSettings.viewsRootPath));
 useViewControllers(app, routes);
 
 const port = process.env.PORT || appSettings.port;

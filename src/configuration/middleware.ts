@@ -7,16 +7,16 @@ import { Routes } from '../routes';
  * @param app The app to register the middleware on
  */
 export const useRequestMiddleware = (app: Express): Express => app
-  .use(express.json())
-  .use(express.urlencoded({ extended: true }));
+  .use(express.json()) // first piece of middleware (parses the request body to json for us to read)
+  .use(express.urlencoded({ extended: true })); 
 
 /**
  * Use a view template engine
  * @param app The app to register the template engine on
  * @param viewsPath The path to the views directory
  */
-export const useViewEngine = (app: Express, viewEngine: string, viewsPath: string): Express => app
-  .set(Views, viewsPath)
+export const setViewEngine = (app: Express, viewEngine: string, viewsPath: string): Express => app
+  .set(Views, viewsPath) // set sets up a setting
   .set(ViewEngine, viewEngine);
 
 /**
